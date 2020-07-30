@@ -1,21 +1,21 @@
-# kmong_Fruit_app
+# plant_homepage
 -------
 
 React를 이용해서 구현했습니다. 
-css는 직접 구현했으며, sass 라이브러리를 이용했습니다. 컴포넌트는 class 기반으로 개발을 진행했습니다.
-외부 API 호출이 없으므로, 객체에 값을 담아서 값 변경 및 선언해서 진행했고, SPA(Single Page App) 도메인을 이용해서 페이지 3개를 구현했습니다.
-App 페이지에서 값을 선언 후 props 로 값을 받아 설계할 예정이었으나, props 값을 받는데 실패하였으므로 객체에 하나하나 담아서 정보가 보이도록 설계했습니다.
-css는 sass기반으로 일일히 디자인했습니다.
+css는 직접 구현했으며, sass 라이브러리를 이용했습니다. 컴포넌트는 class 기반으로 개발을 진행했습니다. 
+라우터를 사용해서 페이지 3개를 구현해서 나눴으며, 각 페이지에 필요한 기능을 적용했습니다. 
+![식물](https://user-images.githubusercontent.com/31337244/88902585-60887a00-d28d-11ea-9d61-0fdd5ee5ea04.JPG)
+
 
 ## 컴포넌트 구조
 * Components
-    * Basket
+    * Basket(장바구니)
       * Basket.js
       * Basket.scss
-    * Menu
-      * Fruitpage.js
-      * Menu.js
-      * Primepage.js
+    * Menu(식물 메뉴)
+      * Fruitpage.js(일반식물)
+      * Menu.js (전체)
+      * Primepage.js(
     * Nav
       * Nav.js
       * Nav.scss
@@ -827,14 +827,3 @@ export const getApi = async () => {
 }
 ```
 ------
-
-
-#### 보완점 
-장바구니 페이지에서 가격 함수 구현을 완성하지 못했습니다. 장바구니 리스트 값은 객체에 담아 페이지에 보여주지만 가격의 값 선언에 대한 설계에 대해 아직 해결을 하지 못했습니다.
-장바구니 상단 갯수 정보 구현에도 실패하였습니다. 시간상 장바구니 리스트 정렬은 시도하지 못하였습니다. 초기 구조를 제대로 설계를 하지 못한거 같습니다. 
-
-
-
-
-
-
