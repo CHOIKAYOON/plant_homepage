@@ -1,0 +1,162 @@
+$red: #fa5252;
+$orange: #fd7e14;
+$yellow: #FFD400;
+$green: #40c057;
+$blue: #339af0;
+$indigo: #5c7cfa;
+$violet: #7950f2;
+$g_ : rgb(246, 246, 246);
+$white: white;
+
+.body{ 
+  .fruit_content{
+    background-color: BEIGE;
+    position: relative;
+    width: 1440px;
+    height: 900px;
+    top: 70px;
+
+    .fruit_content_list{
+      position: relative;
+      top: 25px;
+      left: 40px;   
+      .fruit_menu{
+        position: relative;
+        left: 30px;
+        button {
+          margin: 10px;
+          font-weight: bold;
+        }
+       .fruitList_btn{
+          background-color:GREENYELLOW;
+          width: 60px;
+          height: 40px;
+          border: none;
+          border-radius: 20%;
+          outline: 0;
+          a{
+            text-decoration: none;
+            color: black;
+          }
+          
+       }  
+       .fruitList_btn_02{
+         border: none;
+         background-color: $g_;
+         outline: 0;
+         a{
+           text-decoration: none;
+           color: black;
+         }
+       }
+       .fruitList_btn_03{
+         border: none;
+         background-color: $g_;
+         outline: 0;
+         span{
+          color: GREENYELLOW;
+          font-style: italic;
+         }
+         a{
+          text-decoration: none;
+          color: black;
+        }
+       }
+      }
+
+      .fruit_list_item{
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.02);
+        border: 1px solid white;
+        width: 350px;
+        height: 250px;
+        margin: 30px 40px;
+        background-color: white;
+        display: inline-table;
+        border-radius: 10%;
+        h3{
+          color: GREENYELLOW;
+          font-style: italic;
+          position: absolute;
+          top: -45px;
+        }
+        .fruit_item{
+          position: relative;
+          top: 30px;
+          left: 20px;
+          img{
+            width: 120px;
+            height: 120px;
+            float: left;
+            margin: 20px;            
+          }
+          p{
+            font-style: normal;
+            font-weight: bold;
+          }
+          .fruit_item_p{
+            color: rgb(138, 122, 122);
+            span{
+              color: black;
+            }
+          }
+          .fruit_item_p_02{
+            color: #8a7a7a;
+            border-top: 1px solid;
+            width: 260px;
+            height: 30px;
+            margin: 10px 30px;
+            padding: 15px;
+            span{
+              color: black;
+            }
+          }
+
+          .fruit_item_button{
+            float: right;
+            margin: 5px;
+            position: relative;
+            top: -10px;
+            left: -40px;
+            z-index: 1;
+            .fruit_item_btn{
+              background-color: #FB842D;
+              width: 50px;
+              height: 30px;
+              border: none;
+              border-radius: 10%;
+              font-style: normal;
+              font-weight: bold;
+              color: white;
+              margin: 7px;
+            }
+              .fruit_item_btn_02 {
+                background-color: #F2F3F7;
+                width: 50px;
+                height: 30px;
+                border: none;
+                border-radius: 10%;
+                font-style: normal;
+                font-weight: bold;
+              }
+              .fruit_item_btn_03 {
+                font-style: normal;
+                font-weight: bold;
+                border: none;
+                width: 50px;
+                height: 30px;
+                position: relative;
+                top: -13px;
+                border-radius: 10%;
+                background-color: #e7d1d1;
+              }
+           }
+
+        }
+
+      }
+     
+    }
+    
+  }
+
+}
