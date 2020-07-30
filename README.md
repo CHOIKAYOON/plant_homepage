@@ -13,7 +13,7 @@ css는 직접 구현했으며, sass 라이브러리를 이용했습니다. 컴�
       * Basket.js
       * Basket.scss
     * Menu(식물 메뉴)
-      * Fruitpage.js(일반식물)
+      * lantpage.js(일반식물)
       * Menu.js (전체)
       * Primepage.js(
     * Nav
