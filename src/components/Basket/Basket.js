@@ -50,7 +50,7 @@ class Basket extends Component {
     ],
     basketNumber: 0,
     primeTotal: 0,
-    fruitTotal: 0,
+    plantTotal: 0,
     toTal: 0
   }
 
@@ -58,7 +58,7 @@ class Basket extends Component {
     const { list, primeTotal } = this.state
     return (
       <React.Fragment>
-        <p className={ex('fruit__purchase_prime')}>
+        <p className={ex('plant__purchase_prime')}>
           prime식물1
           <span>
               {this.state.toTal}
@@ -69,10 +69,10 @@ class Basket extends Component {
     )
   }
 
-  hendlepurChaseFruit = () => {
+  hendlepurChaseplant = () => {
     return (
       <React.Fragment>
-        <p className={ex('fruit__purchase_fruit')}>
+        <p className={ex('plant__purchase_plant')}>
           일반 식물
               <span>
             {this.state.toTal}
@@ -84,7 +84,7 @@ class Basket extends Component {
   hendlepurChaseTotal = () => {
     return (
       <React.Fragment>
-        <p className={ex('fruit__purchase_total')}>
+        <p className={ex('plant__purchase_total')}>
           총 상품금액
                 <span>
             {this.state.toTal}
@@ -136,12 +136,12 @@ class Basket extends Component {
       <div className={ex('body')}>
         {/* Nav 컴포넌트에 장바구니  basketNumber/list state 값 전달 */}
         <Nav basketNumber={this.state.basketNumber} list={list} />
-        <div className={ex('fruit_content')}>
-          <div className={ex('fruit_content_list')}>
+        <div className={ex('plant_content')}>
+          <div className={ex('plant_content_list')}>
              {/* list 배열 map 통해 값 보이도록 구현 */}
             {this.state.list.map((item, idx) => (
-              <div className={ex('fruit_list_item')} key={idx}>
-                <div className={ex('fruit_item')}>
+              <div className={ex('plant_list_item')} key={idx}>
+                <div className={ex('plant_item')}>
                   {/* isPrime 값이 참일 경우 보이도록 선언 */}
                   {item.isPrime && <h3>Prime</h3>}
                   <img src={item.imges} />
@@ -149,13 +149,13 @@ class Basket extends Component {
                   <p>{item.price}원</p>
                   {item.demand > 0 && (
                     <React.Fragment>
-                      <p className={ex('fruit_item_p')}>수량 <span>{item.demand}</span></p>
+                      <p className={ex('plant_item_p')}>수량 <span>{item.demand}</span></p>
                     </React.Fragment>
                   )}
-                   <p className={ex('fruit_item_p_02')}>상품금액 <span>{item.price}원</span></p>
-                  <div className={ex('fruit_item_button')}>
+                   <p className={ex('plant_item_p_02')}>상품금액 <span>{item.price}원</span></p>
+                  <div className={ex('plant_item_button')}>
                     {/* 수량 값이 0일 경우 이벤트 클릭 함수 호출 */}
-                    <button className={ex('fruit_item_btn_03')}
+                    <button className={ex('plant_item_btn_03')}
                       onClick ={
                         () => {this.handleClickChageList(item.id, item.demand)}
                         }>취소</button>
@@ -166,12 +166,12 @@ class Basket extends Component {
             )}
           </div>
 
-          <div className={ex('fruit_purchase_content')}>
+          <div className={ex('plant_purchase_content')}>
             {/* 가격 정보 함수 컴포넌트로 구현 */}
             {this.hendlepurChasePrime()}
-            {this.hendlepurChaseFruit()}
+            {this.hendlepurChaseplant()}
             {this.hendlepurChaseTotal()}
-            <div className={ex('fruit__purchase_btn')}>
+            <div className={ex('plant__purchase_btn')}>
               <button className={ex('purchase_btn')} onClick={this.handlePayMent}>결제하기</button>
             </div>
           </div>

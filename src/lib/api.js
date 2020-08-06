@@ -5,7 +5,7 @@ import axios from "axios";
 //동기식 API 
 export const getApi = async () => {
     try {        
-        return await axios.get('/api/fruits')
+        return await axios.get('/api/plants')
     } catch (error) {
         console.log(error)
     }

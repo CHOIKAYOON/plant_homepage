@@ -114,38 +114,38 @@ class App extends Component {
       <div className={ex('body')}>
         {/* Nav 컴포넌트에 장바구니  basketNumber/list state 값 전달 */}
         <Nav basketNumber={this.state.basketNumber} list= {list} />
-        <div className={ex('fruit_content')}>
-          <div className={ex('fruit_content_list')}>
+        <div className={ex('plant_content')}>
+          <div className={ex('plant_content_list')}>
             {/* Menu 컴포넌트  list state 값 전달*/}
             <Menu list ={list}/>
             {/* list 배열 map 통해 값 보이도록 구현 */}
             {this.state.list.map((item, idx) => (
-              <div className={ex('fruit_list_item')} key={idx}>
-                <div className={ex('fruit_item')}>
+              <div className={ex('plant_list_item')} key={idx}>
+                <div className={ex('plant_item')}>
                 {/* isPrime 값이 참일 경우 보이도록 선언 */}
                   {item.isPrime && <h3>Prime</h3>}
                   <img src={item.imges} />
                   <p>{item.name}</p>
                   <p>{item.price}원</p>
-                  <p className={ex('fruit_item_p')}> 잔량 <span>{item.stock} </span></p>
+                  <p className={ex('plant_item_p')}> 잔량 <span>{item.stock} </span></p>
                   {/* 수량 버튼 삼항 연산자 및 이벤트 함수 */}
                   {item.demand === 0 ? (
-                    <div className={ex('fruit_item_button')}>
-                      <button className={ex('fruit_item_btn')} onClick={() => this.handlePlusClick(item.id)}>담기</button>
+                    <div className={ex('plant_item_button')}>
+                      <button className={ex('plant_item_btn')} onClick={() => this.handlePlusClick(item.id)}>담기</button>
                     </div>
                   ) : (
                       <React.Fragment>
-                        <p className={ex('fruit_item_p')}>수량 <span>{item.demand}</span></p>
+                        <p className={ex('plant_item_p')}>수량 <span>{item.demand}</span></p>
                         {/* 잔량 버튼 삼항 연산자 및 이벤트 함수  */}
                         {item.stock === 0 ? (
-                          <div className={ex('fruit_item_button')}>
-                            <button className={ex('fruit_item_btn')} onClick={() => this.handelstopClick(item.id)}>담기</button>
-                            <button className={ex('fruit_item_btn_02')} onClick={() => this.handleMinusClick(item.id)}>빼기</button>
+                          <div className={ex('plant_item_button')}>
+                            <button className={ex('plant_item_btn')} onClick={() => this.handelstopClick(item.id)}>담기</button>
+                            <button className={ex('plant_item_btn_02')} onClick={() => this.handleMinusClick(item.id)}>빼기</button>
                           </div>
                         ) : (
-                            <div className={ex('fruit_item_button')}>
-                              <button className={ex('fruit_item_btn')} onClick={() => this.handlePlusClick(item.id)}>담기</button>
-                              <button className={ex('fruit_item_btn_02')} onClick={() => this.handleMinusClick(item.id)}>빼기</button>
+                            <div className={ex('plant_item_button')}>
+                              <button className={ex('plant_item_btn')} onClick={() => this.handlePlusClick(item.id)}>담기</button>
+                              <button className={ex('plant_item_btn_02')} onClick={() => this.handleMinusClick(item.id)}>빼기</button>
                             </div>
                           )}
                       </React.Fragment>

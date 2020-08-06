@@ -9,14 +9,14 @@ class Menu extends Component {
     render() {
         return (
             // 버튼 클릭 시 해당 페이지 경로로 설정.
-            <div className={ex('fruit_menu')}>
-                <button className={ex('fruitList_btn')}>
+            <div className={ex('plant_menu')}>
+                <button className={ex('plantList_btn')}>
                     <Link to='/' >전체</Link>
                 </button>
-                <button className={ex('fruitList_btn_02')}>
-                    <Link to={`/Fruitpage`} >일반 식물</Link>
+                <button className={ex('plantList_btn_02')}>
+                    <Link to={`/plantpage`} >일반 식물</Link>
                 </button>
-                <button className={ex('fruitList_btn_03')}>
+                <button className={ex('plantList_btn_03')}>
                     <Link to='/Primepage' ><span>Prime</span>식물</Link>
                 </button>
             </div>

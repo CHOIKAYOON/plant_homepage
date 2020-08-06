@@ -9,12 +9,12 @@ $g_ : rgb(246, 246, 246);
 $white: white;
 
 .body{
-    .fruit_content_list{
+    .plant_content_list{
       position: relative;
       top: 25px;
       left: 40px;   
 
-      .fruit_list_litem{
+      .plant_list_litem{
         border: 1px solid white;
         width: 350px;
         height: 250px;
@@ -44,7 +44,7 @@ $white: white;
       }
      
     }
-    .fruit_purchase_content{
+    .plant_purchase_content{
       width: 240px;
       height: 180px;
       position: relative;
@@ -52,7 +52,7 @@ $white: white;
       font-style: normal;
       font-weight: bold;
       margin-top: 10px;
-      .fruit__purchase_prime{
+      .plant__purchase_prime{
         color: GREENYELLOW;
         font-style: italic;
         font-size: 15px;
@@ -64,7 +64,7 @@ $white: white;
           float: right;
         }
       }
-      .fruit__purchase_fruit{
+      .plant__purchase_plant{
         font-size: 15px;
         display: inline-block;
         margin: 5px;
@@ -73,7 +73,7 @@ $white: white;
           margin-left: 190px;
         }
       }
-      .fruit__purchase_total{
+      .plant__purchase_total{
         font-size: 20px;
         display: flow-root;
         margin: px;
@@ -86,7 +86,7 @@ $white: white;
           color: blue;
         }
       }
-      .fruit__purchase_btn{
+      .plant__purchase_btn{
         .purchase_btn{
           background-color: GREENYELLOW;
           border: none;

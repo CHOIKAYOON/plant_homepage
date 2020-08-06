@@ -9,25 +9,25 @@ $g_ : rgb(246, 246, 246);
 $white: white;
 
 .body{ 
-  .fruit_content{
+  .plant_content{
     background-color: BEIGE;
     position: relative;
     width: 1440px;
     height: 900px;
     top: 70px;
 
-    .fruit_content_list{
+    .plant_content_list{
       position: relative;
       top: 25px;
       left: 40px;   
-      .fruit_menu{
+      .plant_menu{
         position: relative;
         left: 30px;
         button {
           margin: 10px;
           font-weight: bold;
         }
-       .fruitList_btn{
+       .plantList_btn{
           background-color:GREENYELLOW;
           width: 60px;
           height: 40px;
@@ -40,7 +40,7 @@ $white: white;
           }
           
        }  
-       .fruitList_btn_02{
+       .plantList_btn_02{
          border: none;
          background-color: $g_;
          outline: 0;
@@ -49,7 +49,7 @@ $white: white;
            color: black;
          }
        }
-       .fruitList_btn_03{
+       .plantList_btn_03{
          border: none;
          background-color: $g_;
          outline: 0;
@@ -64,7 +64,7 @@ $white: white;
        }
       }
 
-      .fruit_list_item{
+      .plant_list_item{
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.02);
         border: 1px solid white;
         width: 350px;
@@ -79,7 +79,7 @@ $white: white;
           position: absolute;
           top: -45px;
         }
-        .fruit_item{
+        .plant_item{
           position: relative;
           top: 30px;
           left: 20px;
@@ -93,13 +93,13 @@ $white: white;
             font-style: normal;
             font-weight: bold;
           }
-          .fruit_item_p{
+          .plant_item_p{
             color: rgb(138, 122, 122);
             span{
               color: black;
             }
           }
-          .fruit_item_p_02{
+          .plant_item_p_02{
             color: #8a7a7a;
             border-top: 1px solid;
             width: 260px;
@@ -111,14 +111,14 @@ $white: white;
             }
           }
 
-          .fruit_item_button{
+          .plant_item_button{
             float: right;
             margin: 5px;
             position: relative;
             top: -10px;
             left: -40px;
             z-index: 1;
-            .fruit_item_btn{
+            .plant_item_btn{
               background-color: #FB842D;
               width: 50px;
               height: 30px;
@@ -129,7 +129,7 @@ $white: white;
               color: white;
               margin: 7px;
             }
-              .fruit_item_btn_02 {
+              .plant_item_btn_02 {
                 background-color: #F2F3F7;
                 width: 50px;
                 height: 30px;
@@ -138,7 +138,7 @@ $white: white;
                 font-style: normal;
                 font-weight: bold;
               }
-              .fruit_item_btn_03 {
+              .plant_item_btn_03 {
                 font-style: normal;
                 font-weight: bold;
                 border: none;
